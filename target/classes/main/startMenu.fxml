@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="811.0" style="-fx-background-color: #181818; -fx-max-height: 600; -fx-min-height: 600; -fx-max-width: 800; -fx-min-width: 800;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.StartMenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="80.0" prefHeight="150.0" prefWidth="600.0" style="-fx-min-height: 150; -fx-max-height: 150; -fx-min-width: 600; -fx-max-width: 600;" text="API SPEED TEST" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Duplexide" size="70.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+         <textFill>
+            <LinearGradient endX="0.14691943127962084" endY="0.1800947867298578" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.28859999775886536" green="0.7799999713897705" blue="0.7378799915313721" opacity="0.20999999344348907" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="587.0" layoutY="189.0" style="-fx-min-height: 50; -fx-max-height: 50; -fx-min-width: 75; -fx-max-width: 75;" text="BY TONKA">
+         <font>
+            <Font name="Duplexide" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.14691943127962084" endY="0.1800947867298578" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Bloom threshold="1.0">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="0.7638888955116272" green="0.9960648417472839" blue="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
+      <Label layoutX="91.0" layoutY="380.0" text=" SELECT APIs TO USE">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.976303317535545" endY="0.5260663507109005" startX="0.9715639810426541">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.5440000295639038" green="0.8500000238418579" blue="0.8398000001907349" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5440000295639038" green="0.8500000238418579" blue="0.8398000001907349" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Bloom threshold="0.0">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow height="255.0" radius="127.0" width="255.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
+      <Button layoutX="100.0" layoutY="315.0" mnemonicParsing="false" text="ADD" wrapText="true">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.07" specularConstant="0.25" specularExponent="40.0" surfaceScale="1.96">
+               <bumpInput>
+                  <Shadow height="41.52" radius="17.94" width="32.24">
+                     <color>
+                        <Color red="0.9868420958518982" green="0.963998556137085" blue="0.963998556137085" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="334.66" elevation="53.28">
+                     <color>
+                        <Color red="0.5380116701126099" green="0.7914230227470398" blue="0.8421052694320679" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="147.0" layoutY="315.0" mnemonicParsing="false" text="REMOVE" wrapText="true">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.07" specularConstant="0.25" specularExponent="40.0" surfaceScale="1.96">
+               <bumpInput>
+                  <Shadow height="41.52" radius="17.94" width="32.24">
+                     <color>
+                        <Color red="0.9868420958518982" green="0.963998556137085" blue="0.963998556137085" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="334.66" elevation="53.28">
+                     <color>
+                        <Color red="0.5380116701126099" green="0.7914230227470398" blue="0.8421052694320679" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label accessibleRole="BUTTON" alignment="CENTER" blendMode="SCREEN" contentDisplay="TOP" graphicTextGap="0.0" layoutX="691.0" layoutY="333.0" onMouseClicked="#setMainStage" prefHeight="71.0" prefWidth="53.0" text="&gt;" textFill="#58acb5">
+         <font>
+            <Font name="Consolas" size="96.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.57">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="98.0" layoutY="290.0" text="SELECT MODEL TO USE">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.976303317535545" endY="0.5260663507109005" startX="0.9715639810426541">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.7300000190734863" green="0.7300000190734863" blue="0.7300000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.5440000295639038" green="0.8500000238418579" blue="0.8398000001907349" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5440000295639038" green="0.8500000238418579" blue="0.8398000001907349" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Bloom threshold="0.0">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow height="255.0" radius="127.0" width="255.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+      </Label>
+      <ChoiceBox id="modelBox" fx:id="modelBox" blendMode="SCREEN" layoutX="271.0" layoutY="285.0" prefHeight="19.0" prefWidth="174.0" style="-fx-background-color: #677B7A;">
+         <effect>
+            <Bloom threshold="1.0">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Bloom>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ChoiceBox>
+   </children>
+</AnchorPane>
